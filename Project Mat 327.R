@@ -49,7 +49,8 @@ FP_sd<-sqrt(FP_variance)
 FP_sd
 
 
-
+plot(Expense_Budget_20240918$`Financial Plan Amount`,Expense_Budget_20240918$`Current Modified Budget Amount`, xlab = "Financial Plan Amount", ylab = "Current Modified Budget Amount", main = "NYC Financial Budget Plan")
+cor(Expense_Budget_20240918$`Financial Plan Amount`,Expense_Budget_20240918$`Current Modified Budget Amount`)
 
 
 
