@@ -53,6 +53,37 @@ plot(Expense_Budget_20240918$`Financial Plan Amount`,Expense_Budget_20240918$`Cu
 cor(Expense_Budget_20240918$`Financial Plan Amount`,Expense_Budget_20240918$`Current Modified Budget Amount`)
 
 
+xbar1 <- mean(Expense_Budget_20240918$`Financial Plan Amount`)
+xbar1 #912807.8
+xbar2 <- mean(Expense_Budget_20240918$`Current Modified Budget Amount`)
+xbar2 #977389.5
+
+s1 <- sd(Expense_Budget_20240918$`Financial Plan Amount`)
+s1 #5140558
+s2 <- sd(Expense_Budget_20240918$`Current Modified Budget Amount`)
+s2 #5198777
+
+n1 <- 923217
+n2 <- 923217
+
+t1 <- -qt(0.475,923217-1)
+t2 <- -qt(0.475,923217-1)
+t1 #0.06270679
+t2 #0.06270679
+
+L1<- xbar1 - t1*s1/sqrt(n1)
+L1 #912472.3
+U1 = xbar1 + t1*s1/sqrt(n1)
+U1 #913143.3
+913143.3-912472.3 #671
+
+L2 <- xbar2 - t2*s2/sqrt(n2)
+L2 #977050.2
+U2 = xbar2 + t2*s2/sqrt(n2)
+U2 #977728.8
+977728.8-977050.2 #678.6
+
+
 
 
 
