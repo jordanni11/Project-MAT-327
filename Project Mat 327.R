@@ -84,6 +84,13 @@ U2 #977728.8
 977728.8-977050.2 #678.6
 
 
+expense.lm <- lm(Expense_Budget_20240918$`Adopted Budget Amount` ~ Expense_Budget_20240918$`Current Modified Budget Amount` + Expense_Budget_20240918$`Financial Plan Amount`, data = Expense_Budget_20240918)
+expense.lm
+summary(expense.lm) 
+predict(expense.lm, newdata = data.frame(Expense_Budget_20240918$`Financial Plan Amount` == 2 ))
+hist(resid(expense.lm),main = "Histogram of Residuals of Linear Model",xlab = "Residuals of Expense Linear Model")
+plot(fitted.values(expense.lm),resid(expense.lm),main ="Scatterplot",xlab ="Fitted Values of Expense Linear Model" ,ylab ="Residuals of Expense Linear Model" )
+
 
 
 
