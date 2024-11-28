@@ -92,6 +92,13 @@ hist(resid(expense.lm),main = "Histogram of Residuals of Linear Model",xlab = "R
 plot(fitted.values(expense.lm),resid(expense.lm),main ="Scatterplot",xlab ="Fitted Values of Expense Linear Model" ,ylab ="Residuals of Expense Linear Model" )
 
 
+mu <- mean(Expense_Budget_20240918$`Financial Plan Amount`)
+mu
+t.test(Expense_Budget_20240918$`Financial Plan Amount`, mu = 63396.6)
+
+mu2 <- mean(Expense_Budget_20240918$`Current Modified Budget Amount`)
+mu2
+t.test( Expense_Budget_20240918$`Current Modified Budget Amount`, mu = 80051.21)
 
 
 
