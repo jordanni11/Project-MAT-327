@@ -102,3 +102,9 @@ t.test( Expense_Budget_20240918$`Current Modified Budget Amount`, mu = 80051.21)
 
 
 
+## final part
+plot(Expense_Budget_20240918$`Adopted Budget Amount`,Expense_Budget_20240918$`Current Modified Budget Amount`, xlab = "Adopted Budget Amount", ylab = "Current Modified Budget Amount", main = "Adopted Budget Relationship with Modified Budget")
+
+plot(Expense_Budget_20240918$`Adopted Budget Amount`,Expense_Budget_20240918$`Financial Plan Amount`, xlab = "Adopted Budget Amount", ylab = "Financial Plan Amount", main = "Adopted Budget Relationship with Financial Plan")
+
+
